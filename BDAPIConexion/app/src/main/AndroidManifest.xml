@@ -15,6 +15,9 @@
         android:theme="@style/Theme.BDAPIConexion"
         tools:targetApi="31">
         <activity
+            android:name=".SELECT_COMIDA"
+            android:exported="false" />
+        <activity
             android:name=".SELECT_BEBIDAS"
             android:exported="false" />
         <activity

@@ -82,23 +82,6 @@ public class SELECT_BEBIDAS extends AppCompatActivity {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-
-//                        try {
-//                            JSONArray jsonArray = new JSONArray(response);
-//
-//                            for (int i = 0; i < jsonArray.length(); i++) {
-//                                JSONObject jsonObject = jsonArray.getJSONObject(i);
-//
-//                                TextView textView = new TextView(SELECT_BEBIDAS.this);
-//                                textView.setText("IdBebida: " + jsonObject.getString("IdBebida") +
-//                                        " | NombreBebida: " + jsonObject.getString("NombreBebida") +
-//                                        " | Precio: " + jsonObject.getString("Precio"));
-//
-//                                Consulta.addView(textView);
-//                            }
-//                        } catch (JSONException e) {
-//                            e.printStackTrace();
-//                        }
                     }
                 },
                 new Response.ErrorListener() {
