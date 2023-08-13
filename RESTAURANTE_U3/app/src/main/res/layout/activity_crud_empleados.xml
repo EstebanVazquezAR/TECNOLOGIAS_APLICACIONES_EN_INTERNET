@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CRUD_Bebidas">
+    tools:context=".CRUD_Empleados">
 
     <LinearLayout
         android:id="@+id/Principal"
@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CRUD_Bebidas"
+                android:text="CRUD_Empleados"
                 android:gravity="center"
                 android:textSize="20sp" />
         </LinearLayout>

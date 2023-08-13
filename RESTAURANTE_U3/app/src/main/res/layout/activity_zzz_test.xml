@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".L_Admin">
+
+    <LinearLayout
+        android:id="@+id/Principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp">
+        <!-- Titulo -->
+        <LinearLayout
+            android:id="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu Temporal"
+                android:gravity="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!-- Botones -->
+        <LinearLayout
+            android:id="@+id/Botones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:layout_weight="7">
+            <!-- Primera fila de botones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            <!-- CRUD's -->
+                <Button
+                    android:id="@+id/Layout_CRUD_Bebidas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="CRUD Bebidas" />
+                <Button
+                    android:id="@+id/Layout_CRUD_Comida"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="CRUD Comida" />
+                <Button
+                    android:id="@+id/Layout_CRUD_Empleados"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="CRUD Empleados" />
+            <!-- SELECT's -->
+                <Button
+                    android:id="@+id/Layout_SELECT_Bebidas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="SELECT Bebidas" />
+                <Button
+                    android:id="@+id/Layout_SELECT_Comida"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="SELECT Comida" />
+                <Button
+                    android:id="@+id/Layout_SELECT_Empleados"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="SELECT Empleados" />
+            <!-- Principales -->
+                <Button
+                    android:id="@+id/Layout_Principal_Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Principal Login" />
+                <Button
+                    android:id="@+id/Layout_Principal_Mesas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Principal Mesas" />
+                <Button
+                    android:id="@+id/Layout_Principal_CARTA_MENU"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Principal CARTA MENU" />
+            <!-- Trabajo -->
+                <Button
+                    android:id="@+id/Layout_Trabajo_Mesero"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Trabajo Mesero" />
+                <Button
+                    android:id="@+id/Layout_Trabajo_Cocinero"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Trabajo Cocinero" />
+            <!-- Logins Necesarios -->
+                <Button
+                    android:id="@+id/Layout_Login_Usuarios_PASS"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Login Usuarios PASS" />
+                <Button
+                    android:id="@+id/Layout_Login_Admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Login Admin" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

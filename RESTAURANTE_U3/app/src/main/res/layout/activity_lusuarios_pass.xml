@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CRUD_Bebidas">
+    tools:context=".L_Usuarios_PASS">
 
     <LinearLayout
         android:id="@+id/Principal"
@@ -31,7 +31,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CRUD_Bebidas"
+                android:text="Usuarios_PASS"
                 android:gravity="center"
                 android:textSize="20sp" />
         </LinearLayout>
@@ -57,11 +57,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:text="id bebida"
+                    android:text="id Empleado"
                     android:textSize="20dp"/>
 
                 <TextView
-                    android:id="@+id/twidbebida"
+                    android:id="@+id/twidempleado"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -79,11 +79,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:text="Nombre bebida"
+                    android:text="Nombre"
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/twnombrebebida"
+                    android:id="@+id/twnombreempleado"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -101,11 +101,32 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:text="Precio bebida "
+                    android:text="Usuario "
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/twpreciobebida"
+                    android:id="@+id/twUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text=" -----"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Contraseña "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/twcontraseña"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -126,26 +147,26 @@
             android:gravity="center"
             android:layout_weight="6">
 
-            <EditText
-                android:id="@+id/etIdBebida"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="id bebida"
-                android:padding="12dp" />
+                android:text="Contraseña "
+                android:textSize="20dp" />
 
             <EditText
-                android:id="@+id/etNombreBebidas"
+                android:id="@+id/etNuevaContraseña"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nombre bebida"
+                android:hint="Nueva Contraseña"
                 android:padding="12dp" />
 
             <EditText
                 android:id="@+id/etPrecioBebida"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Precio bebida"
+                android:hint="Confirmar Contraseña"
                 android:padding="12dp" />
+
 
         </LinearLayout>
         <!-- Botones -->
@@ -161,40 +182,13 @@
             android:layout_weight="1">
 
             <!-- Primera fila de botones -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/Insert"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Insert" />
-
-
-                <Button
-                    android:id="@+id/SelectID"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Select ID" />
-            </LinearLayout>
             <!-- Segunda fila de botones -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/Delete"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Delete" />
 
                 <Button
                     android:id="@+id/Update"
@@ -212,17 +206,11 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/Layout_Select"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Consulta" />
-                <Button
                     android:id="@+id/Layout_Menu"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Menu" />
+                    android:text="Cerrar Sesion" />
                 <Button
                     android:id="@+id/Limpiar"
                     android:layout_width="0dp"

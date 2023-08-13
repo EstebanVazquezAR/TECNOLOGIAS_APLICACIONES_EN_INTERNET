@@ -1,0 +1,133 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Layout superior -->
+        <LinearLayout
+            android:id="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Agrega contenido aquí -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mesa #"
+                android:gravity="center"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <!-- Layout Formulario -->
+        <LinearLayout
+            android:id="@+id/Formulario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <!-- lISTAS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="COMIDA"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+            <Spinner
+                android:id="@+id/bebida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="BEBIDAS"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+            <Spinner
+                android:id="@+id/Comida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ANTOJITOS"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:hint="Antojitos"/>
+
+        </LinearLayout>
+        <!-- Layout Total -->
+        <LinearLayout
+            android:id="@+id/Total"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="5">
+
+            <!-- Agrega contenido aquí -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Total : $"
+                android:textSize="20sp"
+                android:layout_weight="3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="-----------------------"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <!-- Layout Botones -->
+        <LinearLayout
+            android:id="@+id/llBotones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="5">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="35sp"
+                android:text="Agregar"
+                android:layout_weight="1"
+                android:layout_margin="5dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="35sp"
+                android:text="Pagar"
+                android:layout_weight="1"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
