@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="estado_esperando">Estado de la conexión: Esperando...</string>
 </resources>
