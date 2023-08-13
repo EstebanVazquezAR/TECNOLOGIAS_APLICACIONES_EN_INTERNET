@@ -102,11 +102,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:text="Descripcion comida"
+                    android:text="Categoria comida"
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/twdescripcioncomida"
+                    android:id="@+id/twstatuscomida"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -154,6 +154,12 @@
             android:layout_weight="6">
 
 
+            <Spinner
+                android:id="@+id/Categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"/>
+
             <EditText
                 android:id="@+id/etIDComida"
                 android:layout_width="match_parent"
@@ -169,12 +175,6 @@
                 android:hint="Nombre Comida"
                 android:padding="12dp" />
 
-            <EditText
-                android:id="@+id/etDescropcionComida"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Descripcion Comida"
-                android:padding="12dp" />
 
             <EditText
                 android:id="@+id/etPrecioComida"
