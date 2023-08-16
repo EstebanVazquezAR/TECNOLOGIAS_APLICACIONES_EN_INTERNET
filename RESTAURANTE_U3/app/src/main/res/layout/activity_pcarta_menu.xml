@@ -43,7 +43,7 @@
                 android:textSize="20sp"
                 android:layout_weight="1"/>
             <Spinner
-                android:id="@+id/bebida"
+                android:id="@+id/Comida"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
@@ -55,7 +55,7 @@
                 android:textSize="20sp"
                 android:layout_weight="1"/>
             <Spinner
-                android:id="@+id/Comida"
+                android:id="@+id/bebida"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
@@ -72,7 +72,12 @@
                 android:textSize="20sp"
                 android:layout_weight="1"
                 android:hint="Antojitos"/>
-
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_weight="1"/>
         </LinearLayout>
         <!-- Layout Total -->
         <LinearLayout

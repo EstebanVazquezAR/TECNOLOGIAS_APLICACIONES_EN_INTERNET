@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "0008401e-3684-4a3b-bccf-2c364b5caa6c",
+		"name": "AccionesMesero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DiferentesListas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idMesero\":1,\r\n    \"idMesa\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/AccionesApp",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"AccionesApp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actalizar status por Mesa o ID de registro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificadorTabla\" : 1,\r\n    \"tipoCambio\" : 1,\r\n    \"IdCambioStatus\" : 1,\r\n    \"status\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/AccionesApp",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"AccionesApp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

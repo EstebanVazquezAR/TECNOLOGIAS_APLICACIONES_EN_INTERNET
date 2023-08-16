@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "918fa24c-d928-47a5-af2a-95f257c8a9bf",
+		"name": "PedidoComida",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"IdComida\": 2,\r\n  \"IdMesa\": 1,\r\n  \"IdTrabajador\": 1,\r\n  \"Status\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/PedidosComidaApp",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"PedidosComidaApp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"IdPedidosCocineros\": 0,\r\n  \"IdComida\": 0,\r\n  \"IdMesa\": 0,\r\n  \"IdTrabajador\": 0,\r\n  \"Status\": 0,\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/PedidosComidaApp",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"PedidosComidaApp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/PedidosComidaApp?id=3",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"PedidosComidaApp"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "cd72b094-778e-408f-85cc-3ef500040950",
+		"name": "Bebidas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListaBebidas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/BebidasApp",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"BebidasApp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"NombreBebida\": \"Fanta\",\r\n  \"Precio\": 40\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/BebidasApp",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"BebidasApp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarBebida",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"IdBebida\": 5,\r\n  \"NombreBebida\": \"Fanta2\",\r\n  \"Precio\": 40\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/BebidasApp",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"BebidasApp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/BebidasApp?id=8",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"BebidasApp"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetallesBebida",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/BebidasApp?id=1",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"BebidasApp"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

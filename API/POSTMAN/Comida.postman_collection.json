@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "2dda78fa-6cbf-4f8e-8c33-4a839aa5df03",
+		"name": "Comida",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"IdComida\": 2,\r\n  \"NombreComida\": \"Mole Rojo\",\r\n  \"Descripcion\": \"50\",\r\n  \"Status\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/ComidasApp",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"ComidasApp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"NombreComida\": \"Orden de Tacos\",\r\n  \"Descripcion\": \"50\",\r\n   \"Status\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/ComidasApp",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"ComidasApp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/ComidasApp?id=5",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"ComidasApp"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetallesComida",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/ComidasApp?id=1",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"ComidasApp"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ComidasPorHora",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apprestauranteupt.azurewebsites.net/api/ComidasApp?time=1801",
+					"protocol": "https",
+					"host": [
+						"apprestauranteupt",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"ComidasApp"
+					],
+					"query": [
+						{
+							"key": "time",
+							"value": "1801"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -54,8 +54,10 @@ public class SELECT_BEBIDAS extends AppCompatActivity {
 
     }
 
+    //https://proyectos123tra.000webhostapp.com/Banco/api.php
+
     private void TB() {
-        String url = "https://apprestauranteupt.azurewebsites.net/api/BebidasApp"; // URL que devuelve un arreglo de objetos JSON
+        String url = "https://proyectos123tra.000webhostapp.com/Banco/api.php"; // URL que devuelve un arreglo de objetos JSON
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
@@ -73,9 +75,10 @@ public class SELECT_BEBIDAS extends AppCompatActivity {
                                 JSONObject jsonObject = jsonArray.getJSONObject(i);
 
                                 TextView textView = new TextView(SELECT_BEBIDAS.this);
-                                textView.setText("" + jsonObject.getString("IdBebida") +
-                                        " | " + jsonObject.getString("NombreBebida") +
-                                        " | " + jsonObject.getString("Precio"));
+                                textView.setText(" | " + jsonObject.getString("Id") +
+                                        " | " + jsonObject.getString("Clave") +
+                                        " | " + jsonObject.getString("Descripcion") +
+                                        " | " + jsonObject.getString("Fecha_hora"));
 
                                 Consulta.addView(textView);
                             }
@@ -110,5 +113,62 @@ public class SELECT_BEBIDAS extends AppCompatActivity {
 
         Volley.newRequestQueue(this).add(stringRequest);
     }
+
+//    private void TB() {
+//        String url = "https://apprestauranteupt.azurewebsites.net/api/BebidasApp"; // URL que devuelve un arreglo de objetos JSON
+//        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+//                new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        try {
+//                            JSONArray jsonArray = new JSONArray(response);
+//
+//                            // Create a TextView for the header
+//                            TextView headerTextView = new TextView(SELECT_BEBIDAS.this);
+//                            headerTextView.setText("Id | NombreBebida | Precio");
+//                            // Customize headerTextView appearance if needed
+//                            Consulta.addView(headerTextView);
+//
+//                            for (int i = 0; i < jsonArray.length(); i++) {
+//                                JSONObject jsonObject = jsonArray.getJSONObject(i);
+//
+//                                TextView textView = new TextView(SELECT_BEBIDAS.this);
+//                                textView.setText("" + jsonObject.getString("IdBebida") +
+//                                        " | " + jsonObject.getString("NombreBebida") +
+//                                        " | " + jsonObject.getString("Precio"));
+//
+//                                Consulta.addView(textView);
+//                            }
+//                        } catch (JSONException e) {
+//                            e.printStackTrace();
+//                        }
+//
+////                        try {
+////                            JSONArray jsonArray = new JSONArray(response);
+////
+////                            for (int i = 0; i < jsonArray.length(); i++) {
+////                                JSONObject jsonObject = jsonArray.getJSONObject(i);
+////
+////                                TextView textView = new TextView(SELECT_BEBIDAS.this);
+////                                textView.setText("IdBebida: " + jsonObject.getString("IdBebida") +
+////                                        " | NombreBebida: " + jsonObject.getString("NombreBebida") +
+////                                        " | Precio: " + jsonObject.getString("Precio"));
+////
+////                                Consulta.addView(textView);
+////                            }
+////                        } catch (JSONException e) {
+////                            e.printStackTrace();
+////                        }
+//                    }
+//                },
+//                new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        Log.e("Error", error.getMessage());
+//                    }
+//                });
+//
+//        Volley.newRequestQueue(this).add(stringRequest);
+//    }
 
 }
