@@ -31,7 +31,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Resstaurante U3"
+                android:text="Restaurante U3"
+                android:gravity="center"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Admin / Mesero / Chef"
                 android:gravity="center"
                 android:textSize="20sp" />
         </LinearLayout>

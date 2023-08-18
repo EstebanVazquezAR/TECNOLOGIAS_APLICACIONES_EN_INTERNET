@@ -27,12 +27,7 @@ public class P_CARTA_MENU extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pcarta_menu);
-
-
-
         ComidaMenu();
-
-
     }
 
     private void ComidaMenu(){
@@ -45,32 +40,26 @@ public class P_CARTA_MENU extends AppCompatActivity {
         String currentTime = String.format("%02d:%02d", hour, minute);
         currentTime = currentTime.replace(":", ""); // Elimina los dos puntos
         //int timeAsInt = Integer.parseInt(currentTime); // Convierte la cadena a entero
-
         int timeAsInt = Integer.parseInt(currentTime); // Convierte la cadena a entero
         // Asigna la hora formateada al TextView
         TextView textView = findViewById(R.id.textView);
         textView.setText(currentTime);
         //Desayuno
         if(timeAsInt >= 800 && timeAsInt <= 1200){
+            TBDesayuno();
         }
         //Comida
         if(timeAsInt >= 1201 && timeAsInt <= 1800 ){
-
+            TBComida();
         }
         //Cena
         if(timeAsInt >= 1801 && timeAsInt <= 2300){
-
-            TBDesayuno();
             TBCena();
-            TBComida();
         }
-
-
     }
 
     private void SpinnerBebida() {
         String url = "https://apprestauranteupt.azurewebsites.net/api/BebidasApp"; // URL que devuelve un arreglo de objetos JSON
-
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
@@ -81,9 +70,9 @@ public class P_CARTA_MENU extends AppCompatActivity {
 
                             for (int i = 0; i < jsonArray.length(); i++) {
                                 JSONObject jsonObject = jsonArray.getJSONObject(i);
-                                String itemText = "IdBebida: " + jsonObject.getString("IdBebida") +
-                                        "\nNombreBebida: " + jsonObject.getString("NombreBebida") +
-                                        "\nPrecio: " + jsonObject.getString("Precio");
+                                String itemText = " | " + jsonObject.getString("IdBebida") +
+                                        " | " + jsonObject.getString("NombreBebida") +
+                                        " | " + jsonObject.getString("Precio");
                                 spinnerItems.add(itemText);
                             }
 
